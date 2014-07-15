@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>java</title>
+<script>
+    function startTime()
+   {
+      var today = new Date();
+      var h=today.getHours();
+      var m=today.getMinutes();
+      var s=today.getSeconds();
+      m=checkTime(m);
+      s=checkTime(s);
+                   
+      var date = (new Date()).toString().substr(0,10);                       
+      document.getElementById('time').innerHTML= date + " ";
+      document.getElementById('time').innerHTML+=h+":"+m+":"+s;
+      t=setTimeout('startTime()',500);
+   }   
+   function checkTime(i)
+   {
+      if (i<10)
+      {
+         i="0" + i;
+      }
+      return i;
+   }
+
+</script>
+</head>
+<body onload="startTime()">
+ 
+<div>
+<h2 id="time">Time: </h2>
+</div>
+ 
+</body>
+</html>

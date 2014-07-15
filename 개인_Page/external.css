@@ -1,0 +1,81 @@
+.titl{
+color:blue;
+align:center;
+}
+#rightnav {
+width: 10em;
+float: right;
+background-color: #CCCCFF;
+color: navy;
+padding: 1em 1em 1em 1em;
+font-size: medium;
+}
+
+#pic_psy{width:3cm}
+#footer p {
+text-align: right;
+font: normal italic sans-serif;
+margin-right: 5px;
+margin-top: 0;
+}
+
+#leftnav {
+width: 5em;
+float: left;
+background-color: #CCCCFF;
+color: navy;
+padding: 1em 1em 1em 1em;
+font-size: medium;
+}
+
+#choose{
+background-color: #909090; 
+text-align:center;
+font-size:x-large;
+}
+
+.army {margin:auto; width:50%; height:20%; font-size: large; background-color#b0c4de;
+	background-image:url('wing.png');
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-size: 200px 100px;
+	margin-right:200px;}
+
+    p{margin:auto; width:50%; height:20%; font-size: large; background-color#b0c4de;
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-size: 200px 100px;
+	margin-right:200px;}
+	
+.empha{background-color:white;}
+
+.display{display:none;}
+
+
+div#top{background-image:url('wing.png'); 
+		background-repeat:no-repeat; 
+		background-size:500px 40px; 
+		background-position:center; 
+		background-color:#E8E8E8;}
+		
+.center{text-align:center;}
+		
+.picture {float : left; width:100px; height:100px;}
+#pic2{float : right ; width 150px ;}
+
+body{border:1px; border-style:solid; padding: 1px 50px 1px 50px ;
+	background-image:url('background_body.jpg');}
+	
+#profil, #table{text-align:center; margin:auto;}
+#list{padding-left:100px}
+
+caption{font-size: 2.5em; background-color: black; color:white;}
+
+div.space{margin:50px 10px 50px 10px;}
+
+a:link {color: #0000FF;}
+a:visited {color: #8B0000;}
+a:hover {color: red; background-color:yellow; }
+
+h3:fisrt-letter{font-size:150%;}
+p:fist-line {color: blue}

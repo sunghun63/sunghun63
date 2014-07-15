@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>java</title>
+<link rel ="stylesheet" type="text/css" href = "external.css">
+<script>
+   function startTime()
+   {
+      var today=new Date();
+      var h=today.getHours();
+      var m=today.getMinutes();
+      var s=today.getSeconds();
+      m=checkTime(m);
+      s=checkTime(s);
+                   
+        var date = (new Date()).toString().substr(0,10);                       
+        document.getElementById('time').innerHTML= date + " ";
+      document.getElementById('time').innerHTML+=h+":"+m+":"+s;
+      t=setTimeout('startTime()',500);
+   }   
+    function checkTime(i)
+   {
+      if (i<10)
+      {
+         i="0" + i;
+      }
+      return i;
+   }
+   </script>
+</head>
+<body onload="startTime()">
+<div>
+<h2 id="time">Time: </h2>
+</div>
+ 
+
+<table border="1" align="center" cellspacing="5" cellpadding="5" width = "80%">
+      <caption><h1 class="titl">Wow</h1></caption>
+      <tr>
+         <th>Dark Night</th>
+         <th>Hong Jin-young</th>
+         <th>Movie That I love</th>
+      </tr>
+      <tr>
+         <td><a href="http://movie.naver.com/movie/bi/mi/mediaView.nhn?code=62586&mid=10225#tabtarget=_blank" alt="DarkNight">
+         <img src="imagee/dark6.jpg" height="200"width="110" onMouseOut="this.src='imagee/dark5.jpg'" onMouseOver="this.src='imagee/dark4.jpg'">		 
+         </a> Mouse In & Out
+		  <img src="imagee/darknight_profil.jpg" height="200"width="250">
+		</td>
+		 
+         <td><a href ="http://www.youtube.com/watch?v=zryi1oONiZE"target=_blank alt="battery of love">
+         <img src="imagee/hong1.jpg" height="200" width="110"
+         onMouseOut="this.src='imagee/hong2.jpg'"
+         onmouseOver="this.src='imagee/hong1.jpg'">
+         </a></td>
+		 
+         <td><a href="http://movie.naver.com/"target=_blank alt="Movie">
+         <img src="imagee/B9217-02.jpg" height="200" width="110"
+         onMouseOut="this.src='imagee/7cbc6c4381a59caa6e99c5f49ad7523c142921.jpg'"
+         onmouseOver="this.src='imagee/B9217-02.jpg'">
+         </a></td>
+      </tr>  
+   </table>
+   
+   <script>
+   x=confirm("DoYouWantToSeeMyInteresting?");
+   if(x==1)
+         alert("See");
+   else
+		alert("push the 'X' button ");
+   
+   
+   </script>
+   
+   <script>
+  
+		var Interest = prompt("what is your interest?", "EX)Movie");
+		alert(Interest);
+		
+	</script>
+	<script>
+	var cnt=0;
+	function interest(form)
+		{
+			for(var i = 0; i < form.inter.length; i++) 
+			{
+				if(form.inter[i].checked == true) 
+					{
+						cnt++;
+						alert(" " + form.inter[i].value + " ");
+					}
+			}
+		}
+   </script>
+	
+	<div>
+		<legend>I want to know your interest</legend>
+		<FORM name="form" multiple>
+		 <INPUT type="checkbox" name="inter" value="movie"> movie <BR>
+		 <INPUT type="checkbox" name="inter" value="music"> music <BR>
+		 <INPUT type="checkbox" name="inter" value="travel"> travel <BR>
+		 <INPUT type="checkbox" name="inter" value="collect"> collect <BR>
+		 <INPUT type="checkbox" name="inter" value="Other"> Other <BR><BR>
+		 <INPUT type="button" value="Check and Click" onClick="interest(this.form)">
+		</FORM>
+	</div>
+	
+	
+  
+   
+<div>
+	<h2>Go<a href="kkwak.html">Back Page</h2></a>
+	<!-- This is the review of the page -->
+</div>
+
+
+
+</body>
+</html>
